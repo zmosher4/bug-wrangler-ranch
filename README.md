@@ -105,24 +105,23 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > 'drovers' is assigned the return value of the hireDrovers function. This function takes a herdSize parameter, and divides that number by ten (meaning 1 drover for every 10 cattle to drive). The hireDrovers functionreturns a unique array of drovers with (in this case 5) random names from the drovers array in the database. Therefore, drovers has a value of that functions return statement, which is 5 names in this case.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > 'drover' is each individual element in the 'drovers' array. 'drover' is the itorator as we loop through the drovers array, so the value of 'drover' will change depending on which index we are on in the drovers array. 'drovers' is the entire array returned from the hireDrovers function with an array of the names of all the drovers we need
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/637680fa2fda44a98c2383ee65a2b18e?sid=14be1583-cb48-437a-a536-ad61011745d3
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
-      journey.push("forest")
+     journey.push('forest');
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > areas is an object, and every key in this object has a random number assigned to its value. we are making a for loop that stops when the itorator (forestNumber) is no longer less than areas.forests(the random number assinged to the forests key in the areas object). every time this loop runs, we are pushing the string 'forest' into the journey array.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > the database variable is an object with all the hard coded information this project needs. this database object incudes two arrays (cattleTypes, and drovers) which are objects. The value of database is an object of arrays of objects.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
-
+   > herdSize is a parameter that will get its value once the function is invoked. In order for the function to be properly invoked, it will need a herdSize argument to be passed in. In this case, in the main.js file we are passing in the variable cattleToDrive as an argument to the function, and that variable has a value of 50.
 
 ## Final Step
 
