@@ -8,6 +8,7 @@ const roundup = (herdSize) => {
     let animal = database.cattleTypes[randomType].breed;
     cattle.push(animal);
   }
+  return cattle;
 };
 
 module.exports = { roundup };
